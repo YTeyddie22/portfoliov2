@@ -6,7 +6,6 @@
 	"scripts": {
 		"start": "npm-run-all --parallel 'watch:*'",
 		"watch:start": "parcel serve src/index.html",
-		"build": "npx tailwindcss -i ./public/src/index.css -o ./public/output.css --minify",
 		"watch:css": "tailwindcss -i src/style.css -o src/assets/tailwind/tailwind.css -w"
 	},
 	"keywords": [],
