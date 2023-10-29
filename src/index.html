@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Teddy's portfolio</title>
+
+		<link href="./style.css" rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+			rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+			integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<script defer src="./index.js"></script>
+	</head>
+
+	<body
+		class="font-mono bg-slate-200 h-full grid grid-cols-1 gap-14 sm:w-screen sm:p-0 sm-right-0 sm:left:0">
+		<header class="header w-screen h-screen mb-8">
+			<nav
+				class="navigation w-full h-24 flex justify-around items-center tracking-wider bg-green-300 text-slate-700">
+				<h1 class="logo uppercase text-6xl" id="logo">Teddy Yongo</h1>
+
+				<ul
+					class="nav__links relative h-24 w-1/2 flex flex-row top-0 justify-around items-center text-3xl uppercase">
+					<li class="nav__item">
+						<a class="nav__link" href="#about"
+							><i class="fas fa-address-book mr-3"> </i>About</a
+						>
+					</li>
+
+					<li class="nav__item">
+						<a class="nav__link" href="#projects"
+							><i class="fas fa-tasks mr-3"></i> Projects</a
+						>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#contacts">
+							<i class="fas fa-inbox mr-3"></i> Contacts</a
+						>
+					</li>
+				</ul>
+				<!--<div class="burger cursor-pointer block sm:hidden">
+					<div
+						class="line1 transition-all duration-500 ease-in-out bg-green-200 w-10 h-1 mb-2"
+					></div>
+					<div
+						class="line2 transition-all duration-500 ease-in-out bg-green-200 w-10 h-1 mb-2"
+					></div>
+					<div
+						class="line3 transition-all duration-500 ease-in-out bg-green-200 w-10 h-1"
+					></div>
+				</div>
+			-->
+			</nav>
+		</header>
+
+		<section class="top_about">
+			<main
+				class="intro p-14 h-full w-full grid grid-cols-1 gap-14 sm:grid-cols-2">
+				<section
+					class="intro_text text-4xl h-full w-full flex flex-col items-center justify-center">
+					<article class="intro_text top mr-6">
+						<h1
+							class="tracking-widest font-serif text-zinc-800 text-5xl mb-4">
+							Where
+							<span class="highlight">Software Problems</span>
+						</h1>
+					</article>
+					<article class="intro_text bottom">
+						<h1s
+							class="tracking-widest font-serif text-stone-700 text-5xl mr-6S">
+							meet their solutions
+						</h1s>
+					</article>
+				</section>
+
+				<section
+					class="intro_image flex justify-center items-start h-1/2 sm:h-full sm:items-center">
+					<img
+						src="./assets/images/profImage.jpg"
+						alt="intro_image"
+						class="rounded-full aspect-square h-fit object-contain" />
+				</section>
+			</main>
+		</section>
+
+		<section class="section about h-full w-screen mb-5 mt-5" id="about">
+			<header class="section__title">
+				<h2 class="section__description">About Me</h2>
+			</header>
+
+			<main class="h-full w-full grid grid-cols-1 gap-1">
+				<div
+					class="w-full h-full text-center flex justify-center items-center flex-col">
+					<div class="about__text flex flex-col">
+						<h4
+							class="text-3xl font-semibold tracking-wider leading-loose">
+							Hello! I am Teddy, <br />
+							A Software Engineer from Kenya.
+						</h4>
+						<br />
+						<p class="text-justify tracking-wide leading-loose">
+							I first learnt about programming from Mount Kenya
+							University. This piqued my curiosity and developed
+							into a hobby and then a passion which eventually led
+							to a career change. I am a highly motivated Engineer
+							and in love with everything related to the
+							Technological field. The field giving a person the
+							ability to work remotely is a plus. By working in
+							this field, I have proven high-quality collaboration
+							and good communication with other team members. I
+							have gained a lot and would like to share my
+							experience with another company.
+						</p>
+						<br />
+
+						<br />
+
+						<p class="text-justify tracking-wide leading-loose">
+							I am currently studying everything related to
+							software engineering and searching for a FullStack
+							development role.
+						</p>
+					</div>
+				</div>
+			</main>
+		</section>
+
+		<section class="section h-screen w-screen mb-5" id="projects">
+			<header class="section__title">
+				<h2 class="section__description">Projects</h2>
+			</header>
+			<section
+				class="project_slider max-w-7xl h-5/6 my-0 mx-auto overflow-hidden flex relative justify-center">
+				<figure
+					class="slide slide--1 w-full h-full absolute top-0 flex flex-col items-center justify-center">
+					<img
+						src="./assets/images/html.png"
+						alt="vanilla project"
+						style="width: 400px; height: 300px" />
+					<figcaption class="text-center text-1xl pt-4">
+						Morderna is a simple landing page implemented with cool
+						vanilla javascript features
+					</figcaption>
+				</figure>
+				<figure
+					class="slide slide--2 w-full h-full absolute top-0 flex flex-col items-center justify-center">
+					<img
+						src="./assets/images/html.png"
+						alt="vanilla project"
+						style="width: 400px; height: 300px" />
+					<figcaption class="text-center text-1xl pt-4">
+						Get recipe for your food of choice
+					</figcaption>
+				</figure>
+				<figure
+					class="slide slide--3 w-full h-full absolute top-0 flex flex-col items-center justify-center">
+					<img
+						src="./assets/images/html.png"
+						alt="vanilla project"
+						style="width: 400px; height: 300px" />
+					<figcaption class="text-center text-1xl pt-4">
+						Landing page with react
+					</figcaption>
+				</figure>
+
+				<button
+					class="slider__btn slider__btn--left absolute top-1/2 border-none rounded-full h-20 w-20 text-6xl cursor-pointer z-10">
+					&larr;
+				</button>
+				<button
+					class="slider__btn slider__btn--right absolute top-1/2 border-none rounded-full h-20 w-20 text-6xl cursor-pointer z-10">
+					&rarr;
+				</button>
+
+				<div class="dots"></div>
+			</section>
+		</section>
+
+		<section class="section languages__section h-full w-screen mb-5">
+			<header class="section__title">
+				<h2 class="section__description">Languages and Tools</h2>
+			</header>
+			<main class="languages__tools max-w-7xl mt-8">
+				<div
+					class="tools tool__section grid grid-cols-3 gap-7 sm:grid-cols-3 md:grid-cols-4">
+					<div class="language">
+						<img
+							src="./assets/images/html.png"
+							width="70px"
+							alt="HTML" />
+						<h3 class="language_name">HTML</h3>
+					</div>
+					<div class="language">
+						<img
+							src="./assets/images/css.png"
+							width="70px"
+							alt="CSS" />
+						<h3 class="language_name">CSS</h3>
+					</div>
+					<div class="language">
+						<img
+							src="./assets/images/js.png"
+							width="70px"
+							alt="Javascript" />
+						<h3 class="language_name">Javascript</h3>
+					</div>
+					<div class="language">
+						<img
+							src="./assets/images/tailwind.png"
+							width="70px"
+							alt="Tailwind" />
+						<h3 class="language_name">Tailwind</h3>
+					</div>
+
+					<div class="language">
+						<img
+							src="./assets/images/mongo.png"
+							width="70px"
+							alt="MongoDB" />
+						<h3 class="language_name">MongoDB</h3>
+					</div>
+
+					<div class="language">
+						<img
+							src="./assets/images/express.png"
+							width="70px"
+							alt="Express" />
+						<h3 class="language_name">Express</h3>
+					</div>
+
+					<div class="language">
+						<img
+							src="./assets/images/react.png"
+							width="70px"
+							alt="React" />
+						<h3 class="language_name">React</h3>
+					</div>
+
+					<div class="language">
+						<img
+							src="./assets/images/node.png"
+							width="70px"
+							alt="NODE" />
+						<h3 class="language_name">NODE</h3>
+					</div>
+
+					<div class="language">
+						<img
+							src="./assets/images/mongoose.png"
+							width="70px"
+							alt="Mongoose" />
+						<h3 class="language_name">Mongoose</h3>
+					</div>
+
+					<div class="language">
+						<img
+							src="./assets/images/npm.png"
+							width="70px"
+							alt="NPM" />
+						<h3 class="language_name">NPM</h3>
+					</div>
+
+					<div class="language">
+						<img
+							src="./assets/images/java.png"
+							width="70px"
+							alt="JAVA" />
+						<h3 class="language_name">JAVA</h3>
+					</div>
+
+					<div class="language">
+						<img
+							src="./assets/images/mysql.png"
+							width="70px"
+							alt="MYSQL" />
+						<h3 class="language_name">MYSQL</h3>
+					</div>
+					<div class="language">
+						<img
+							src="./assets/images/postman.png"
+							width="70px"
+							alt="PostMan" />
+						<h3 class="language_name">PostMan</h3>
+					</div>
+					<div class="language">
+						<img
+							src="./assets/images/vs.png"
+							width="70px"
+							alt="VS code" />
+						<h3 class="language_name">VS code</h3>
+					</div>
+					<div class="language">
+						<img
+							src="./assets/images/intell.png"
+							width="70px"
+							alt="IntelliJ" />
+						<h3 class="language_name">IntelliJ</h3>
+					</div>
+					<div class="language">
+						<img
+							src="./assets/images/git.png"
+							width="70px"
+							alt="Git" />
+						<h3 class="language_name">Git</h3>
+					</div>
+				</div>
+			</main>
+		</section>
+
+		<footer
+			class="section footer flex flex-col-reverse justify-center align-center bg-gray-700 section h-screen w-full"
+			id="contacts">
+			<header class="section__title">
+				<h2
+					class="section__description capitalize whitespace-nowrap"></h2>
+			</header>
+			<div class="footer__socials flex justify-center">
+				<ul
+					class="socials list-none flex justify-center mb-10 flex-wrap">
+					<li class="social">
+						<a
+							class="footer__link"
+							target="_blank"
+							href="https://github.com/YTeyddie22"
+							><i class="fa-brands fa-github"></i
+						></a>
+					</li>
+					<li class="social">
+						<a
+							class="footer__link"
+							target="_blank"
+							href="https://www.instagram.com/yteyddie22/"
+							><i class="fa-brands fa-instagram"></i
+						></a>
+					</li>
+					<li class="social">
+						<a
+							class="footer__link"
+							target="_blank"
+							href="https://twitter.com/YTeyddie22"
+							><i class="fa-brands fa-twitter"></i
+						></a>
+					</li>
+					<li class="social">
+						<a
+							class="footer__link"
+							target="_blank"
+							href="https://www.linkedin.com/in/teddy-yongo-4181111b1/"
+							><i class="fa-brands fa-linkedin-in"></i
+						></a>
+					</li>
+					<li class="social">
+						<a
+							class="footer__link"
+							target="_blank"
+							href="https://www.reddit.com/user/Teddev2206"
+							><i class="fa-brands fa-reddit"></i
+						></a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+</html>
