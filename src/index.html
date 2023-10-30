@@ -25,8 +25,6 @@
 		<header class="header w-screen h-fit mb-8 z-30">
 			<nav
 				class="navigation w-full h-24 flex justify-around items-center tracking-wider bg-green-300 text-slate-700 px-80 py-24">
-				<h1 class="logo uppercase text-6xl" id="logo">Teddy Yongo</h1>
-
 				<ul
 					class="nav__links relative h-24 w-1/2 flex flex-row top-0 justify-around items-center text-3xl uppercase">
 					<li class="nav__item">
@@ -61,16 +59,18 @@
 			</nav>
 		</header>
 
-		<section class="top_about h-screen">
+		<section class="top_about h-screen flex justify-center">
 			<main
-				class="intro p-14 h-full w-full grid grid-cols-1 gap-14 sm:grid-cols-2">
+				class="intro h-full w-full grid grid-cols-1 gap-14 sm:grid-cols-2 max-w-7xl">
 				<section
 					class="intro_text text-4xl h-full w-full flex flex-col items-center justify-center">
 					<article class="intro_text top mr-6">
 						<h1
 							class="tracking-widest font-serif text-zinc-800 text-5xl mb-4">
 							Where
-							<span class="highlight">Software Problems</span>
+							<span class="highlight whitespace-nowrap"
+								>Software Problems</span
+							>
 						</h1>
 					</article>
 					<article class="intro_text bottom">
@@ -86,7 +86,7 @@
 					<img
 						src="./assets/images/profImage.jpg"
 						alt="intro_image"
-						class="rounded-full aspect-square h-fit object-contain" />
+						class="aspect-square h-fit object-contain" />
 				</section>
 			</main>
 		</section>

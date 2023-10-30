@@ -261,6 +261,10 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 980px) {
+	.top_about {
+		padding-left: 10rem;
+		padding-right: 10rem;
+	}
 	.about {
 		padding-left: 10rem;
 		padding-right: 10rem;
