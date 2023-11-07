@@ -2,7 +2,9 @@
 
 const burger = document.querySelector(".burger");
 const nav = document.querySelector(".nav__links");
+const mobileNavSection = document.querySelector(".mobile_menu_content");
 const navLinks = document.querySelectorAll(".nav__links li");
+const mobileLinks = document.querySelectorAll(".mobile_links");
 const header = document.querySelector(".header");
 const navSection = document.querySelector(".navigation");
 const allSections = document.querySelectorAll(".section");
@@ -11,11 +13,12 @@ const platformsText = document.querySelector(".footer .section__description");
 //? NAV
 
 //! Nav slide section
-/* const navSlider = function () {
-	burger.addEventListener('click', () => {
-		nav.classList.toggle('navigation-active');
+const navSlider = function () {
+	burger.addEventListener("click", () => {
+		mobileNavSection.classList.toggle("navigation-active");
+		navSection.classList.toggle("hide_nav");
 
-		navLinks.forEach((el, i) => {
+		mobileLinks.forEach((el, i) => {
 			if (el.style.animation) {
 				return;
 			} else {
@@ -25,17 +28,15 @@ const platformsText = document.querySelector(".footer .section__description");
 			}
 		});
 
-		burger.classList.toggle('menu');
+		burger.classList.toggle("menu");
 	});
 };
 
-navSlider(); */
+navSlider();
 
-//! Nav selection EVENT
+//! Nav selection EVENT Desktop
 
 const navScrollBehavior = function (e) {
-	e.preventDefault();
-
 	const navLinks = e.target
 		.closest(".navigation")
 		.querySelectorAll(".nav__link");
@@ -43,6 +44,20 @@ const navScrollBehavior = function (e) {
 	if (navLinks) {
 		const id = e.target.getAttribute("href");
 		document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+	}
+};
+
+//! Nav selection EVENT Desktop
+
+const mobileNavScrollBehavior = function (e) {
+	const mobileNavLinks = e.target
+		.closest(".navigation")
+		.querySelectorAll(".mobile_link");
+
+	if (mobileNavLinks) {
+		const id = e.target.getAttribute("href");
+		document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+		navSection.classList.remove("hide_nav");
 	}
 };
 

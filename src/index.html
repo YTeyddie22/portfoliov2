@@ -23,10 +23,18 @@
 	<body
 		class="font-mono bg-slate-200 h-full grid grid-cols-1 gap-14 sm:w-screen sm:p-0 sm-right-0 sm:left:0">
 		<header class="header w-screen h-fit mb-8 z-30">
+			<div class="burger cursor-pointer block sm:hidden">
+				<div
+					class="line1 transition-all duration-500 ease-in-out w-10 h-1 mb-2"></div>
+				<div
+					class="line2 transition-all duration-500 ease-in-out w-10 h-1 mb-2"></div>
+				<div
+					class="line3 transition-all duration-500 ease-in-out w-10 h-1"></div>
+			</div>
 			<nav
-				class="navigation w-full h-24 flex justify-around items-center tracking-wider px-80 py-24">
+				class="navigation hide_nav w-full h-24 flex justify-around items-center tracking-wider px-80 py-24">
 				<ul
-					class="nav__links relative h-24 w-1/2 flex flex-row top-0 justify-around items-center text-3xl uppercase">
+					class="nav__links relative h-24 w-full flex flex-row top-0 justify-around items-center text-3xl uppercase">
 					<li class="nav__item">
 						<a class="nav__link" href="#about"
 							><i class="fas fa-address-book mr-3"> </i>About</a
@@ -44,18 +52,19 @@
 						>
 					</li>
 				</ul>
-				<!--<div class="burger cursor-pointer block sm:hidden">
-					<div
-						class="line1 transition-all duration-500 ease-in-out bg-green-200 w-10 h-1 mb-2"
-					></div>
-					<div
-						class="line2 transition-all duration-500 ease-in-out bg-green-200 w-10 h-1 mb-2"
-					></div>
-					<div
-						class="line3 transition-all duration-500 ease-in-out bg-green-200 w-10 h-1"
-					></div>
+
+				<div class="mobile_menu_content h-screen">
+					<ul
+						class="mobile_links h-1/2 flex justify-center items-center flex-col">
+						<li class="mobile_link"><a href="#about">About</a></li>
+						<li class="mobile_link">
+							<a href="#projects">Projects</a>
+						</li>
+						<li class="mobile_link">
+							<a href="#contacts">Contacts</a>
+						</li>
+					</ul>
 				</div>
-			-->
 			</nav>
 		</header>
 
@@ -67,7 +76,7 @@
 					<article class="intro_text top mr-6">
 						<h1 class="intro_text_top">
 							Where
-							<span class="highlight whitespace-nowrap"
+							<span class="highlight sm:whitespace-nowrap"
 								>Software Problems</span
 							>
 						</h1>
@@ -178,11 +187,11 @@
 				</figure>
 
 				<button
-					class="slider__btn slider__btn--left absolute top-1/2 border-none rounded-full h-20 w-20 text-6xl cursor-pointer z-10">
+					class="slider__btn slider__btn--left absolute bottom-0 sm:bottom-1/2 border-none rounded-full h-20 w-20 text-6xl cursor-pointer z-10">
 					&larr;
 				</button>
 				<button
-					class="slider__btn slider__btn--right absolute top-1/2 border-none rounded-full h-20 w-20 text-6xl cursor-pointer z-10">
+					class="slider__btn slider__btn--right absolute bottom-0 sm:bottom-1/2 border-none rounded-full h-20 w-20 text-6xl cursor-pointer z-10">
 					&rarr;
 				</button>
 
