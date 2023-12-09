@@ -9,7 +9,6 @@ const header = document.querySelector(".header");
 const navSection = document.querySelector(".navigation");
 const allSections = document.querySelectorAll(".section");
 const platformsText = document.querySelector(".footer .section__description");
-
 //? NAV
 
 // Prevent default reloading
@@ -35,6 +34,7 @@ const navSlider = function () {
 		mobileNavSection.classList.toggle("navigation-active");
 		navSection.classList.toggle("hide_nav");
 		burger.classList.toggle("menu");
+		burger.closest(".header").classList.toggle("header_opacity_mobile");
 	});
 
 	mobileLinks.forEach((el, i) => {
@@ -48,6 +48,7 @@ const navSlider = function () {
 		el.addEventListener("click", function () {
 			navSection.classList.add("hide_nav");
 			burger.classList.toggle("menu");
+			burger.closest(".header").classList.toggle("header_opacity_mobile");
 		});
 	});
 };
