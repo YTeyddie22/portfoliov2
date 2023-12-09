@@ -12,6 +12,23 @@ const platformsText = document.querySelector(".footer .section__description");
 
 //? NAV
 
+// Prevent default reloading
+document.addEventListener("DOMContentLoaded", function () {
+	// Check if the page has been restarted
+	if (!sessionStorage.getItem("pageRestarted")) {
+		// Set a flag indicating that the page has been restarted
+		sessionStorage.setItem("pageRestarted", "true");
+		// Reload the page with the home element
+		window.location.replace(window.location.origin);
+	}
+
+	// Add an event listener for the 'beforeunload' event
+	window.addEventListener("beforeunload", function () {
+		// Clear the flag when the page is about to unload
+		sessionStorage.removeItem("pageRestarted");
+	});
+});
+
 //! Nav slide section
 const navSlider = function () {
 	burger.addEventListener("click", () => {
