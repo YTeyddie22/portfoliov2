@@ -34,18 +34,21 @@ const navSlider = function () {
 	burger.addEventListener("click", () => {
 		mobileNavSection.classList.toggle("navigation-active");
 		navSection.classList.toggle("hide_nav");
-
-		mobileLinks.forEach((el, i) => {
-			if (el.style.animation) {
-				return;
-			} else {
-				el.style.animation = `navLinksMovement 1.5s ease forwards ${
-					i / 7 + 0
-				}s`;
-			}
-		});
-
 		burger.classList.toggle("menu");
+	});
+
+	mobileLinks.forEach((el, i) => {
+		if (el.style.animation) {
+			return;
+		} else {
+			el.style.animation = `navLinksMovement 1.5s ease forwards ${
+				i / 7 + 0
+			}s`;
+		}
+		el.addEventListener("click", function () {
+			navSection.classList.add("hide_nav");
+			burger.classList.toggle("menu");
+		});
 	});
 };
 
