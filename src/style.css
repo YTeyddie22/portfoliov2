@@ -333,9 +333,6 @@ figcaption {
 		height: 100vh;
 	}
 
-	.intro_text_top {
-		display: flex;
-	}
 	.slider__btn {
 		border: 1px solid #555;
 		background-color: #eee;
