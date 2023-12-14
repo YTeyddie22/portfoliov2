@@ -68,6 +68,8 @@ const navScrollBehavior = function (e) {
 	}
 };
 
+nav.addEventListener("click", navScrollBehavior);
+
 //! Nav selection EVENT Desktop
 
 const mobileNavScrollBehavior = function (e) {
@@ -101,10 +103,6 @@ const navObserver = new IntersectionObserver(stickyNavigation, {
 	rootMargin: `-${navHeight}px`,
 });
 navObserver.observe(header);
-
-//! ADDEVENTLISTENERS
-
-nav.addEventListener("click", navScrollBehavior);
 
 //! 4. Show Contents on scroll
 //* Observer Function
