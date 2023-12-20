@@ -21,8 +21,8 @@
 	</head>
 
 	<body
-		class="font-mono bg-slate-200 h-full grid grid-cols-1 gap-14 sm:w-screen sm:p-0 sm-right-0 sm:left:0">
-		<header class="header w-screen h-fit mb-8 z-30 header_opacity_mobile">
+		class="font-mono bg-slate-200 h-full grid grid-cols-1 sm:w-screen sm:p-0 sm-right-0 sm:left:0">
+		<header class="header w-screen h-fit z-30 header_opacity_mobile">
 			<div class="burger cursor-pointer block sm:hidden">
 				<div
 					class="line1 transition-all duration-500 ease-in-out w-10 h-1 mb-2"></div>
@@ -68,12 +68,11 @@
 			</nav>
 		</header>
 
-		<section class="top_about h-screen flex justify-center">
-			<main
-				class="intro h-full w-full grid grid-cols-1 gap-14 sm:grid-cols-2 max-w-7xl">
+		<section class="top_about app__bg h-screen flex justify-center">
+			<main class="intro h-full w-full grid grid-cols-1 max-w-7xl">
 				<section
 					class="intro_text text-4xl h-full w-full flex flex-col items-center justify-center">
-					<article class="top mr-6">
+					<article class="top">
 						<h1 class="intro_text_top">
 							Where
 							<span class="highlight sm:whitespace-nowrap"
@@ -82,29 +81,28 @@
 						</h1>
 					</article>
 					<article class="bottom">
-						<h1s
-							class="tracking-widest font-serif text-stone-700 text-5xl mr-6S">
+						<h1 class="tracking-widest font-serif text-5xl">
 							meet their solutions
-						</h1s>
+						</h1>
 					</article>
-				</section>
-
-				<section
-					class="intro_image flex justify-center items-start h-1/2 sm:h-full sm:items-center">
-					<img
-						src="./assets/images/profImage.jpg"
-						alt="intro_image"
-						class="aspect-square h-fit object-contain" />
 				</section>
 			</main>
 		</section>
 
-		<section class="section about h-screen w-screen mb-5 mt-5" id="about">
+		<section class="section about h-screen w-screen mb-10 mt-5" id="about">
 			<header class="section__title">
 				<h2 class="section__description">About Me</h2>
 			</header>
 
-			<main class="h-full w-full grid grid-cols-1 gap-1">
+			<section
+				class="image-section flex justify-center items-start sm:items-center">
+				<img
+					src="./assets/images/profImage.jpg"
+					alt="intro_image"
+					class="aspect-square rounded-full h-fit object-cover" />
+			</section>
+			<main
+				class="h-full w-full grid grid-cols-1 gap-1 place-content-start">
 				<div
 					class="w-full h-full text-center flex justify-center items-center flex-col">
 					<div class="about__text flex flex-col">
@@ -142,15 +140,14 @@
 				class="project_slider max-w-7xl h-5/6 my-0 mx-auto overflow-hidden flex relative justify-center">
 				<figure
 					class="slide slide--1 w-full h-full absolute top-0 flex flex-col items-center justify-center">
-					<a href="https://bankler.vercel.app/">
+					<a href="https://serveat.netlify.app/">
 						<img
-							src="./assets/images/bankler.png"
+							src="./assets/images/serveat.png"
 							alt="vanilla project"
 							style="width: 500px; height: auto" />
 					</a>
 					<figcaption class="text-center text-1xl pt-4">
-						Banker is a simple website where different users can be
-						able to send currency to one another.
+						ServeEat is a resturant website built using ReactJs.
 					</figcaption>
 				</figure>
 				<figure
@@ -325,7 +322,7 @@
 		</section>
 
 		<footer
-			class="section footer flex flex-col-reverse justify-center align-center bg-gray-700 section h-screen w-full"
+			class="section footer app__bg flex flex-col-reverse justify-center align-center section h-screen w-full"
 			id="contacts">
 			<header class="section__title">
 				<h2
