@@ -14,7 +14,7 @@ const swiperRight = document.querySelector(".swiper-button-next");
 const imageCaption = document.querySelectorAll("figcaption");
 
 const swiperButtons = [swiperLeft, swiperRight];
-console.log(imageCaption);
+
 const swiper = new Swiper(".swiper", {
 	// Optional parameters
 	direction: "horizontal",
