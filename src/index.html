@@ -17,6 +17,13 @@
 			integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer" />
+
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 		<script defer src="./index.js"></script>
 	</head>
 
@@ -135,9 +142,67 @@
 			<header class="section__title">
 				<h2 class="section__description">Projects</h2>
 			</header>
-			<section
-				class="project_slider max-w-7xl h-5/6 my-0 mx-auto overflow-hidden flex relative justify-center">
+			<div class="swiper">
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide">
+						<figure class="swiper_item">
+							<a href="https://serveat.netlify.app/">
+								<img
+									src="./assets/images/serveat.png"
+									alt="vanilla project"
+									/>
+							</a>
+							<figcaption>
+								A Resturant Website built using
+								ReactJs.
+							</figcaption>
+						</figure>
+					</div>
+					<div class="swiper-slide">
+						<figure class="swiper_item">
+							<a href="https://loop-studio-zeta.vercel.app/">
+								<img
+									src="./assets/images/loopstudio.png"
+									alt="vanilla project"
+									/>
+							</a>
+
+							<figcaption>
+								A FrontEnd Page built using React for challenge purposes
+							</figcaption>
+						</figure>
+					</div>
+					<div class="swiper-slide"></figure>
 				<figure
+					class="swiper_item">
+					<a href="https://modernized-black.vercel.app">
+						<img
+							src="./assets/images/moderna.png"
+							alt="vanilla project"
+							/>
+					</a>
+					<figcaption>
+						A Landing webpage that containing cool features written
+						in JavaScript
+					</figcaption>
+				</figure></div>
+				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
+
+				<!-- If we need navigation buttons -->
+				<div class="swiper_btn swiper-button-prev">
+					<i class="far fa-arrow-alt-circle-left"></i>
+				</div>
+				<div class="swiper_btn swiper-button-next">
+					<i class="far fa-arrow-alt-circle-right"></i>
+				</div>
+
+				<!-- If we need scrollbar -->
+				<div class="swiper-scrollbar"></div>
+				<!--
+					<figure
 					class="slide slide--1 w-full h-full absolute top-0 flex flex-col items-center justify-center">
 					<a href="https://serveat.netlify.app/">
 						<img
@@ -186,7 +251,16 @@
 				</button>
 
 				<div class="dots"></div>
-			</section>
+				-->
+			</div>
+			
+			<div class="projects__button">
+				<div class="btn" role="button">
+				View More Projects
+			</div>
+
+			</div>
+			
 		</section>
 
 		<section class="section languages__section h-full w-screen mb-5">

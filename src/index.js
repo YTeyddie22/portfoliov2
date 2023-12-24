@@ -9,6 +9,55 @@ const header = document.querySelector(".header");
 const navSection = document.querySelector(".navigation");
 const allSections = document.querySelectorAll(".section");
 const platformsText = document.querySelector(".footer .section__description");
+const swiperLeft = document.querySelector(".swiper-button-prev");
+const swiperRight = document.querySelector(".swiper-button-next");
+const imageCaption = document.querySelectorAll("figcaption");
+
+const swiperButtons = [swiperLeft, swiperRight];
+console.log(imageCaption);
+const swiper = new Swiper(".swiper", {
+	// Optional parameters
+	direction: "horizontal",
+	loop: true,
+
+	spaceBetween: 30,
+	centeredSlides: true,
+	autoplay: {
+		delay: 3200,
+		disableOnInteraction: false,
+	},
+
+	// If we need pagination
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+	},
+
+	// Navigation arrows
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+
+	// And if we need scrollbar
+	scrollbar: {
+		el: ".swiper-scrollbar",
+	},
+
+	autoPlay: {
+		el: ".swiper-wrapper",
+		delay: 3000,
+	},
+});
+
+if (window.innerWidth < 600) {
+	imageCaption.forEach((el) => {
+		el.style.display = "none";
+	});
+	swiperButtons.forEach(function (el) {
+		el.classList.add("swiper-button-hidden");
+	});
+}
 //? NAV
 
 // Prevent default reloading
@@ -151,7 +200,7 @@ const platforms = function () {
 };
 
 //* Slider functionality
-
+/*
 const sliders = function () {
 	const slides = document.querySelectorAll(".slide");
 	const leftBtn = document.querySelector(".slider__btn--left");
@@ -192,5 +241,6 @@ const sliders = function () {
 	leftBtn.addEventListener("click", prevSlide);
 };
 sliders();
+*/
 platforms();
 setInterval(platforms, 20000);
