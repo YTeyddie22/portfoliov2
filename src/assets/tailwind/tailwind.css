@@ -1071,7 +1071,7 @@ figcaption {
 }
 
 .swiper {
-  width: 100%;
+  max-width: 80rem;
   height: 80%;
 }
 
@@ -1085,13 +1085,7 @@ figcaption {
 }
 
 .swiper_item {
-  height: 80%;
   width: 80%;
-}
-
-.swiper_item a {
-  height: 100%;
-  width: 100%;
 }
 
 .swiper_item a > img {
@@ -1140,6 +1134,7 @@ figcaption {
   font-weight: bold;
   color: #00a6fb;
   transition: all 0.3s;
+  font-family: "Poppins", sans-serif;
 }
 
 .projects__button .btn.active,
