@@ -891,7 +891,7 @@ body {
 
 header .burger {
   position: fixed;
-  left: 10%;
+  left: 8%;
   top: 5%;
   z-index: 20;
 }
@@ -1070,6 +1070,10 @@ figcaption {
 
 .tools .language {
   margin: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .tools .language h3 {
@@ -1202,6 +1206,10 @@ figcaption {
     display: flex;
     flex-direction: column;
     height: 100vh;
+  }
+
+  .section {
+    padding: 3rem 3rem;
   }
 
   .slider__btn {
