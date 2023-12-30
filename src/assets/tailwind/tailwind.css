@@ -725,6 +725,10 @@ video {
      object-fit: cover;
 }
 
+.p-14 {
+  padding: 3.5rem;
+}
+
 .py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -950,6 +954,8 @@ figcaption {
 .section__title {
   max-width: 80rem;
   margin: 0 auto 3rem auto;
+  position: relative;
+  font-weight: 800;
 }
 
 .section__description {
@@ -1085,10 +1091,19 @@ figcaption {
   align-items: center;
 }
 
+.tools .language .image {
+  width: 7rem;
+  height: 7rem;
+}
+
+.language .image img {
+  width: 100%;
+}
+
 .tools .language h3 {
   margin-top: 1.3rem;
   font-weight: bold;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   text-align: start;
   text-transform: uppercase;
 }
@@ -1110,10 +1125,10 @@ figcaption {
 
 .swiper-wrapper .swiper-slide {
   height: 100%;
-  margin: 0;
+  margin: 20rem 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
 }
 
@@ -1229,11 +1244,6 @@ figcaption {
   padding-right: 20rem;
 }
 
-.section__title {
-  position: relative;
-  font-weight: 800;
-}
-
 .footer .section__description::before {
   content: "";
   position: absolute;
@@ -1267,6 +1277,10 @@ figcaption {
   .about {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+
+  .swiper-wrapper .swiper-slide {
+    margin: 0;
   }
 
   .footer {
@@ -1308,10 +1322,33 @@ figcaption {
   .image-section {
     flex-direction: column;
     height: auto;
+    align-items: center;
+  }
+
+  .image-section .about_image {
+    width: 15rem;
+  }
+
+  .image-section .about_image::after {
+    top: -2px;
+    right: 30px;
   }
 
   .section {
     padding: 3rem 3rem;
+  }
+
+  .section__title {
+    margin-bottom: 0.5rem;
+  }
+
+  .section__description {
+    font-size: 2.3rem;
+  }
+
+  .swiper-wrapper .swiper-slide {
+    margin-top: 15rem;
+    justify-content: start;
   }
 
   .slider__btn {
@@ -1340,11 +1377,26 @@ figcaption {
   }
 
   .about_header_description {
-    font-size: 2rem;
+    font-size: 2rem !important;
+    text-align: center;
   }
 
   .about__text {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+  }
+
+  .tools .language .image {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .language .image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .tools .language h3 {
+    font-size: 1.2rem;
   }
 
   .highlight::after {
