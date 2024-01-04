@@ -1101,7 +1101,7 @@ figcaption {
 
 .swiper {
   max-width: 80rem;
-  height: 80%;
+  min-height: 50%;
   border-radius: 0.8em;
   background-color: #fefefe;
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
@@ -1115,7 +1115,7 @@ figcaption {
   margin: 20rem 0;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
 }
 
@@ -1255,7 +1255,7 @@ figcaption {
   color: #00a6fb;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 100rem) {
   .top_about {
     padding-left: 6rem;
     padding-right: 6rem;

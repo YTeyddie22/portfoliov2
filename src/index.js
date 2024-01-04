@@ -22,10 +22,6 @@ const swiper = new Swiper(".swiper", {
 
 	spaceBetween: 30,
 	centeredSlides: true,
-	autoplay: {
-		delay: 3200,
-		disableOnInteraction: false,
-	},
 
 	// If we need pagination
 	pagination: {
