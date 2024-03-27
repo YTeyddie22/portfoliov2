@@ -54,11 +54,41 @@ if (window.innerWidth < 600) {
 	imageCaption.forEach((el) => {
 		el.style.display = "none";
 	});
-	swiperButtons.forEach(function (el) {
-		el.classList.add("swiper-button-hidden");
-	});
 }
-//? NAV
+
+//! Nav selection EVENT Desktop
+document.querySelectorAll('.nav__links a[href^="#"]').forEach((link) => {
+	link.addEventListener("click", (event) => {
+		event.preventDefault();
+		const targetId = event.target.getAttribute("href").substring(1); // Get ID from href
+
+		document
+			.getElementById(targetId)
+			.scrollIntoView({ behavior: "smooth" });
+	});
+});
+
+//Mobile Links function
+mobileLinks.forEach((el, i) => {
+	if (el.style.animation) {
+		return;
+	} else {
+		el.style.animation = `navLinksMovement 1.5s ease forwards ${
+			i / 7 + 0
+		}s`;
+	}
+	el.addEventListener("click", function (event) {
+		event.preventDefault();
+		navSection.classList.add("hide_nav");
+		burger.classList.toggle("menu");
+		burger.closest(".header").classList.toggle("header_opacity_mobile");
+
+		const targetId = event.target.getAttribute("href").substring(1); // Get ID from href
+		document
+			.getElementById(targetId)
+			.scrollIntoView({ behavior: "smooth" });
+	});
+});
 
 // Prevent default reloading
 document.addEventListener("DOMContentLoaded", function () {
@@ -78,60 +108,16 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //! Nav slide section
-const navSlider = function () {
+function navSlider() {
 	burger.addEventListener("click", () => {
 		mobileNavSection.classList.toggle("navigation-active");
 		navSection.classList.toggle("hide_nav");
 		burger.classList.toggle("menu");
 		burger.closest(".header").classList.toggle("header_opacity_mobile");
 	});
-
-	mobileLinks.forEach((el, i) => {
-		if (el.style.animation) {
-			return;
-		} else {
-			el.style.animation = `navLinksMovement 1.5s ease forwards ${
-				i / 7 + 0
-			}s`;
-		}
-		el.addEventListener("click", function () {
-			navSection.classList.add("hide_nav");
-			burger.classList.toggle("menu");
-			burger.closest(".header").classList.toggle("header_opacity_mobile");
-		});
-	});
-};
+}
 
 navSlider();
-
-//! Nav selection EVENT Desktop
-
-const navScrollBehavior = function (e) {
-	const navLinks = e.target
-		.closest(".navigation")
-		.querySelectorAll(".nav__link");
-
-	if (navLinks) {
-		const id = e.target.getAttribute("href");
-		document.querySelector(id).scrollIntoView({ behavior: "smooth" });
-	}
-};
-
-nav.addEventListener("click", navScrollBehavior);
-
-//! Nav selection EVENT Desktop
-
-const mobileNavScrollBehavior = function (e) {
-	const mobileNavLinks = e.target
-		.closest(".navigation")
-		.querySelectorAll(".mobile_link");
-
-	if (mobileNavLinks) {
-		const id = e.target.getAttribute("href");
-		document.querySelector(id).scrollIntoView({ behavior: "smooth" });
-		navSection.classList.remove("hide_nav");
-	}
-};
 
 //! Stick Navigation
 
@@ -154,7 +140,6 @@ const navObserver = new IntersectionObserver(stickyNavigation, {
 navObserver.observe(header);
 
 //! 4. Show Contents on scroll
-//* Observer Function
 
 const revealSections = function (entries, observer) {
 	const [entry] = entries;
