@@ -9,46 +9,7 @@ const header = document.querySelector(".header");
 const navSection = document.querySelector(".navigation");
 const allSections = document.querySelectorAll(".section");
 const platformsText = document.querySelector(".footer .section__description");
-const swiperLeft = document.querySelector(".swiper-button-prev");
-const swiperRight = document.querySelector(".swiper-button-next");
 const imageCaption = document.querySelectorAll("figcaption");
-
-const swiperButtons = [swiperLeft, swiperRight];
-
-const swiper = new Swiper(".swiper", {
-	// Optional parameters
-	direction: "horizontal",
-	loop: true,
-
-	spaceBetween: 30,
-	centeredSlides: true,
-	autoplay: {
-		delay: 3200,
-		disableOnInteraction: false,
-	},
-
-	// If we need pagination
-	pagination: {
-		el: ".swiper-pagination",
-		clickable: true,
-	},
-
-	// Navigation arrows
-	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
-	},
-
-	// And if we need scrollbar
-	scrollbar: {
-		el: ".swiper-scrollbar",
-	},
-
-	autoPlay: {
-		el: ".swiper-wrapper",
-		delay: 3000,
-	},
-});
 
 if (window.innerWidth < 600) {
 	imageCaption.forEach((el) => {
@@ -183,6 +144,46 @@ const platforms = function () {
 		platformsText.textContent = "Reddit";
 	}, 16000);
 };
+
+// Swiper functionality
+
+/*
+const swiper = new Swiper(".swiper", {
+	// Optional parameters
+	direction: "horizontal",
+	loop: true,
+
+	spaceBetween: 30,
+	centeredSlides: true,
+	autoplay: {
+		delay: 3200,
+		disableOnInteraction: false,
+	},
+
+	// If we need pagination
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+	},
+
+	// Navigation arrows
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+
+	// And if we need scrollbar
+	scrollbar: {
+		el: ".swiper-scrollbar",
+	},
+
+	autoPlay: {
+		el: ".swiper-wrapper",
+		delay: 3000,
+	},
+});
+
+*/
 
 //* Slider functionality
 /*

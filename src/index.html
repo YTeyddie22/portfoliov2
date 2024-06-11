@@ -18,12 +18,6 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer" />
 
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
 		<script defer src="./index.js"></script>
 	</head>
 
@@ -97,7 +91,7 @@
 		<section class="section about" id="about">
 			<div class="card">
 				<header class="section__title">
-					<h2 class="section__description">About Me</h2>
+					<h2 class="section__description">About</h2>
 					<section class="image-section">
 						<div class="about_image">
 							<img
@@ -117,21 +111,13 @@
 					<div
 						class="w-full h-full text-center flex justify-center items-center flex-col">
 						<div class="about__text flex flex-col">
-							<p class="text-justify">
-								I first learnt about programming from Mount
-								Kenya University. This piqued my curiosity
-								developing into a hobby and eventually led to a
-								career change.
-							</p>
-							<br />
-
 							<p class="text-justify tracking-wide leading-loose">
 								I am a motivated developer in love with
 								everything related to the Technological field. I
 								have proven great collaboration and
-								communication with other teams and also
-								contributed to open-source projects where I have
-								gained insights which I would enjoy sharing.
+								communication with other teams driving projects
+								to completion and also contributed to
+								open-source projects.
 							</p>
 						</div>
 					</div>
@@ -147,19 +133,13 @@
 						<div class="language">
 							<div class="image">
 								<img
-									src="./assets/images/html.png"
-									alt="HTML" />
+									src="./assets/images/python.png"
+									alt="python" />
 							</div>
 
-							<h3 class="language_name">HTML</h3>
+							<h3 class="language_name">Python</h3>
 						</div>
-						<div class="language">
-							<div class="image">
-								<img src="./assets/images/css.png" alt="CSS" />
-							</div>
 
-							<h3 class="language_name">CSS</h3>
-						</div>
 						<div class="language">
 							<div class="image">
 								<img
@@ -168,15 +148,6 @@
 							</div>
 
 							<h3 class="language_name">Javascript</h3>
-						</div>
-						<div class="language">
-							<div class="image">
-								<img
-									src="./assets/images/tailwind.png"
-									alt="Tailwind" />
-							</div>
-
-							<h3 class="language_name">Tailwind</h3>
 						</div>
 
 						<div class="language">
@@ -228,15 +199,6 @@
 
 							<h3 class="language_name">Mongoose</h3>
 						</div>
-
-						<div class="language">
-							<div class="image">
-								<img src="./assets/images/npm.png" alt="NPM" />
-							</div>
-
-							<h3 class="language_name">NPM</h3>
-						</div>
-
 						<div class="language">
 							<div class="image">
 								<img
@@ -258,33 +220,6 @@
 						</div>
 						<div class="language">
 							<div class="image">
-								<img
-									src="./assets/images/postman.png"
-									alt="PostMan" />
-							</div>
-
-							<h3 class="language_name">PostMan</h3>
-						</div>
-						<div class="language">
-							<div class="image">
-								<img
-									src="./assets/images/vs.png"
-									alt="VS code" />
-							</div>
-
-							<h3 class="language_name">VS code</h3>
-						</div>
-						<div class="language">
-							<div class="image">
-								<img
-									src="./assets/images/intell.png"
-									alt="IntelliJ" />
-							</div>
-
-							<h3 class="language_name">IntelliJ</h3>
-						</div>
-						<div class="language">
-							<div class="image">
 								<img src="./assets/images/git.png" alt="Git" />
 							</div>
 
@@ -295,117 +230,110 @@
 			</div>
 		</section>
 
-		<section class="section h-screen w-screen mb-5" id="projects">
-			<div class="swiper">
-				<header class="section__title">
-					<h2 class="section__description p-14">Projects</h2>
-				</header>
-				<div class="swiper-wrapper">
-					<!-- Slides -->
-					<div class="swiper-slide">
-						<figure class="swiper_item">
-							<a href="https://serveat.netlify.app/">
-								<img
-									src="./assets/images/serveat.png"
-									alt="vanilla project" />
-							</a>
-							<figcaption>
-								A Resturant Website built using ReactJs.
-							</figcaption>
-						</figure>
-					</div>
-					<div class="swiper-slide">
-						<figure class="swiper_item">
-							<a href="https://master--exermap.netlify.app/">
-								<img
-									src="./assets/images/mapper.png"
-									alt="vanilla project" />
-							</a>
+		<section class="section" id="projects">
+			<header class="section__title">
+				<h2 class="section__description">PROJECTS</h2>
+			</header>
+			<div class="projects">
+				<div class="project project1">
+					<img
+						src="./assets/images/serveat.png"
+						alt="Serveat project" />
 
-							<figcaption>
-								Exercise in different locations and store the
-								data
-							</figcaption>
-						</figure>
-					</div>
-					<div class="swiper-slide">
-						<figure class="swiper_item">
-							<a href="https://modernized-black.vercel.app">
-								<img
-									src="./assets/images/moderna.png"
-									alt="vanilla project" />
-							</a>
-							<figcaption>
-								A Landing webpage that containing cool features
-								written in JavaScript
-							</figcaption>
-						</figure>
+					<div class="about">
+						<p>
+							A visually stunning landing page, featuring
+							mouthwatering cuisine and easy reservation options,
+							enticing visitors to dine.
+						</p>
+						<div class="link_section">
+							<button class="github_link">
+								<a
+									href="https://github.com/YTeyddie22/restaurant"
+									>github
+								</a>
+							</button>
+							<button class="project_link">
+								<a href="https://serveat.netlify.app/">
+									serveat
+								</a>
+							</button>
+						</div>
 					</div>
 				</div>
-				<!-- If we need pagination -->
-				<div class="swiper-pagination"></div>
 
-				<!-- If we need navigation buttons 
-				<div class="swiper_btn swiper-button-prev">
-					<i class="far fa-arrow-alt-circle-left"></i>
+				<div class="project project2">
+					<img
+						src="./assets/images/mapper.png"
+						alt="vanilla project" />
+					<div class="about">
+						<p>
+							The application will store the data of the different
+							places a user exercises
+						</p>
+						<div class="link_section">
+							<button class="github_link">
+								<a href="https://github.com/YTeyddie22/mapper"
+									>github
+								</a>
+							</button>
+							<button class="project_link">
+								<a href="https://master--exermap.netlify.app/">
+									mapper
+								</a>
+							</button>
+						</div>
+					</div>
 				</div>
-				<div class="swiper_btn swiper-button-next">
-					<i class="far fa-arrow-alt-circle-right"></i>
-				</div>
+				<div class="project project3">
+					<img
+						src="./assets/images/moderna.png"
+						alt="vanilla project" />
 
-				If we need scrollbar -->
-				<div class="swiper-scrollbar"></div>
-				<!--
-					<figure
-					class="slide slide--1 w-full h-full absolute top-0 flex flex-col items-center justify-center">
-					<a href="https://serveat.netlify.app/">
-						<img
-							src="./assets/images/serveat.png"
-							alt="vanilla project"
-							style="width: 500px; height: auto" />
-					</a>
-					<figcaption class="text-center text-1xl pt-4">
-						ServeEat is a resturant website built using ReactJs.
-					</figcaption>
-				</figure>
-				<figure
-					class="slide slide--2 w-full h-full absolute top-0 flex flex-col items-center justify-center">
-					<a href="https://loop-studio-zeta.vercel.app/">
-						<img
-							src="./assets/images/loopstudio.png"
-							alt="vanilla project"
-							style="width: 500px; height: auto" />
-					</a>
-
-					<figcaption class="text-center text-1xl pt-4">
-						Landing page with react
-					</figcaption>
-				</figure>
-				<figure
-					class="slide slide--3 w-full h-full absolute top-0 flex flex-col items-center justify-center">
-					<a href="https://modernized-black.vercel.app">
-						<img
-							src="./assets/images/moderna.png"
-							alt="vanilla project"
-							style="width: 500px; height: auto" />
-					</a>
-					<figcaption class="text-center text-1xl pt-4">
-						This is a webpage that containing cool features written
+					<div class="about">
+						A Landing webpage that containing cool features written
 						in JavaScript
-					</figcaption>
-				</figure>
+						<div class="link_section">
+							<button class="github_link">
+								<a
+									href="https://github.com/YTeyddie22/modernized"
+									>github
+								</a>
+							</button>
+							<button class="project_link">
+								<a href="https://modernized-black.vercel.app">
+									mordernized
+								</a>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="project project4">
+					<img
+						src="./assets/images/snapper.png"
+						alt="Serveat project" />
 
-				<button
-					class="slider__btn slider__btn--left absolute bottom-0 sm:bottom-1/2 border-none rounded-full h-20 w-20 text-6xl cursor-pointer z-10">
-					&larr;
-				</button>
-				<button
-					class="slider__btn slider__btn--right absolute bottom-0 sm:bottom-1/2 border-none rounded-full h-20 w-20 text-6xl cursor-pointer z-10">
-					&rarr;
-				</button>
-
-				<div class="dots"></div>
-				-->
+					<div class="about">
+						<p>
+							Instagram replica where users are able to find
+							friends and post about their important life's
+							journey
+						</p>
+						<div class="link_section">
+							<button class="github_link">
+								<a href="https://github.com/YTeyddie22/snapper"
+									>github</a
+								>
+							</button>
+							<button class="project_link">
+								<a
+									href="https://snapper-teyddie22s-projects.vercel.app/sign-up">
+									snapper
+								</a>
+							</button>
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<div class="projects__button">
